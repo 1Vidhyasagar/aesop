@@ -1,5 +1,6 @@
 import React from "react";
-import { MdOutlineKeyboardArrowRight } from "react-icons/md";
+import Logo from "../download/logo.png";
+import Pic from "../download/pic.jpg";
 
 
 const Home = () => {
