@@ -7,17 +7,23 @@ const Home = () => {
   return (
     <div
       name="home"
-      className="place-content-center h-screen  w-full  bg-white text-black text-left font-sans "
+      className="md:place-content-center md:h-screen  w-full  bg-white text-black text-left font-sans "
     >
+      <div
+        className="absolute pt-2 md:invisible  w-28   cursor-pointer md:mb-56 ml-6  md:w-64
+        "
+      >
+        <img src={Logo} alt="" />
+      </div>
       <div className="  flex flex-col-reverse items-center justify-center  md:flex-row overflow-hidden  pt-0.5">
         <div
-          className="   cursor-pointer md:mb-56 ml-6 h-20 md:w-64
-        " 
+          className="invisible md:visible  w-28   cursor-pointer md:mb-56 ml-6  md:w-64
+        "
         >
           <img src={Logo} alt="" />
         </div>
-        <div className="px-6 pt-12  md:flex md:flex-col justify-center pr-16 ">
-          <p className="  text-black py-4 max-w-md">Supporting city skin</p>
+        <div className="px-6 pt-6 md:pt-12  md:flex md:flex-col justify-center pr-16 ">
+          <p className="  text-black md:py-4 max-w-md">Supporting city skin</p>
           <p className="text-3xl   text-gray-800 ">
             Parsley Seed Anti-Oxidant Intense Serum
           </p>

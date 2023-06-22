@@ -56,10 +56,10 @@ const NavBar = () => {
         carbon neutral shipping on all orders. &nbsp; +
       </div>
       <div
-        className=" font-bold flex justify-left items-center w-full h-20  text-xs md:bg-zinc-800   pl-5
+        className="relative place-content-end font-bold flex justify-left items-center w-full  md:h-20 h-0  text-xs md:bg-zinc-800 
  "
       >
-        <ul className="invisible md:visible md:flex">
+        <ul className="invisible  md:visible md:flex">
           {links.map(({ id, link }) => (
             <li key={id} className="pl-6 cursor-pointer capitalize text-white">
               <Link to={link} smooth duration={500}>
@@ -75,7 +75,7 @@ const NavBar = () => {
           viewBox="0 0 24 24"
           strokeWidth={1.5}
           stroke="white"
-          className="w-6 h-6 cursor-pointer"
+          className="invisible md:visible w-6  h-6 cursor-pointer"
         >
           <path
             strokeLinecap="round"
@@ -83,19 +83,19 @@ const NavBar = () => {
             d="M21 21l-5.197-5.197m0 0A7.5 7.5 0 105.196 5.196a7.5 7.5 0 0010.607 10.607z"
           />
         </svg>
-        <div className="flex  font-bold text-white text-xs md:pl-56">
+        <div className="pt-24    md:pt-0 flex   text-sm font-bold text-white md:text-xs md:pl-56">
           <p>Log in</p>&nbsp;&nbsp;&nbsp;&nbsp;
           <p>Cabinet</p>&nbsp;&nbsp;&nbsp;&nbsp;
           <p>Cart</p>&nbsp;&nbsp;&nbsp;&nbsp;
         </div>
         <div
           onClick={() => setNav(!nav)}
-          className="cursor-pointer pr-4 z-10 text-gray-500 md:hidden"
+          className="pt-24 cursor-pointer   pr-4 z-10 text-gray-300 md:hidden"
         >
-          {nav ? <FaTimes size={30} /> : <FaBars size={30} />}
+          {nav ? <FaTimes size={20} /> : <FaBars size={20} />}
         </div>
         {nav && (
-          <ul className="flex flex-col justify-center items-center absolute top-0 left-0 w-full h-screen bg-gradient-to-b from-black to-gray-800 text-gray-500">
+          <ul className="flex flex-col justify-start  items-start  absolute top-0 left-0 w-full h-screen bg-amber-50 text-gray-700">
             {links.map(({ id, link }) => (
               <li
                 key={id}
