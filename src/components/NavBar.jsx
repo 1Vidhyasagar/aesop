@@ -5,36 +5,48 @@ const NavBar = () => {
 
     const [nav, setNav] = useState(false);
 
-    const links =[
-        {
-            id:1,
-            link:'Skin Care'
-        },
-        {
-            id:2,
-            link:'Body & Hand'
-        },
-        {
-            id:3,
-            link:'Hair'
-        },
-        {
-            id:4,
-            link:'Fragrance'
-        },
-        {
-            id:5,
-            link:'Home'
-        },
-        {
-            id:6,
-            link:'Kits & Travel'
+    const links = [
+      {
+        id: 1,
+        link: "Skin Care",
       },
-       {
-            id:7,
-            link:'Gifts'
+      {
+        id: 2,
+        link: "Body & Hand",
       },
-    ]
+      {
+        id: 3,
+        link: "Hair",
+      },
+      {
+        id: 4,
+        link: "Fragrance",
+      },
+      {
+        id: 5,
+        link: "Home",
+      },
+      {
+        id: 6,
+        link: "Kits & Travel",
+      },
+      {
+        id: 7,
+        link: "Gifts",
+      },
+      {
+        id: 7,
+        link: "Read",
+      },
+      {
+        id: 7,
+        link: "Stores",
+      },
+      {
+        id: 7,
+        link: "Facial Appointments",
+      },
+    ];
     
      
   return (
@@ -44,16 +56,14 @@ const NavBar = () => {
         carbon neutral shipping on all orders. &nbsp; +
       </div>
       <div
-        className=" flex justify-left items-center w-full h-14  text-sm bg-zinc-800
+        className=" font-bold flex justify-left items-center w-full h-20  text-xs bg-zinc-800
  "
       >
-        <div></div>
-
         <ul className="invisible md:visible md:flex">
           {links.map(({ id, link }) => (
             <li
               key={id}
-              className="px-5 cursor-pointer capitalize text-white hover:scale-125 duration-300"
+              className="pl-9 cursor-pointer capitalize text-white"
             >
               <Link to={link} smooth duration={500}>
                 {link}
