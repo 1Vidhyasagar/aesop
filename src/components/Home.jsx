@@ -62,8 +62,12 @@ const Home = () => {
             </a>
           </div>
         </div>
-        <div className=" bg-yellow-500 shadow-2lg shadow-yellow-500/50	 md:w-auto  md:h-80 ">
-          <img src={Pic} class=" " alt="" />
+        <div className="  	 md:w-auto  md:h-80 ">
+          <img
+            src={Pic}
+            class="rounded-full  shadow-2xl shadow-yellow-900"
+            alt=""
+          />
         </div>
       </div>
     </div>

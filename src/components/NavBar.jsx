@@ -56,7 +56,7 @@ const NavBar = () => {
         and enjoy complimentary carbon-neutral shipping. &nbsp; +
       </div>
       <div
-        className="relative place-content-end font-bold flex justify-left items-center w-full  md:h-20 h-0  text-xs md:bg-yellow-950
+        className="relative place-content-end font-bold flex justify-left items-center w-full shadow-lg shadow-yellow-700 md:h-20 h-0  text-xs md:bg-yellow-950
 
  
  "
@@ -85,8 +85,8 @@ const NavBar = () => {
             d="M21 21l-5.197-5.197m0 0A7.5 7.5 0 105.196 5.196a7.5 7.5 0 0010.607 10.607z"
           />
         </svg>
-        <div className=" cursor-pointer pt-24 md:pr-5   md:pt-0 flex   text-sm font-bold text-white md:text-xs md:pl-56" >
-          <p>Log in</p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <div className=" cursor-pointer pt-24 md:pr-5   md:pt-0 flex   text-sm font-bold text-white md:text-xs md:pl-56">
+          <p>Login</p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
           <p>Cabinet</p>&nbsp;&nbsp;&nbsp;&nbsp;
           <p>Cart</p>&nbsp;&nbsp;&nbsp;&nbsp;
         </div>
