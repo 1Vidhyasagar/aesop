@@ -7,11 +7,11 @@ const Home = () => {
   return (
     <div
       name="home"
-      className="md: md:place-content-center md:h-screen  w-full  bg-yellow-200
+      className="md: md:place-content-center md:h-screen  w-full  bg-yellow-200 h-screen pt-1
  text-black text-left font-sans "
     >
       <div
-        className="	 absolute pt-2 md:invisible  w-28   cursor-pointer md:mb-56 ml-6  
+        className="	 absolute  md:invisible  w-28   cursor-pointer md:mb-56 ml-6  
         "
       >
         <img src={Logo} alt="" />
