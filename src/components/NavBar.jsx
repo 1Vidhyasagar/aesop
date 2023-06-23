@@ -56,7 +56,7 @@ const NavBar = () => {
         and enjoy complimentary carbon-neutral shipping. &nbsp; +
       </div>
       <div
-        className="relative place-content-end font-bold flex justify-left items-center w-full shadow-lg shadow-yellow-700 md:h-20 h-0  text-xs md:bg-yellow-950
+        className="relative md:px- place-content-end font-bold flex justify-left items-center w-full shadow-lg shadow-yellow-700 md:h-20 h-0  text-xs md:bg-yellow-950
 
  
  "
@@ -85,7 +85,7 @@ const NavBar = () => {
             d="M21 21l-5.197-5.197m0 0A7.5 7.5 0 105.196 5.196a7.5 7.5 0 0010.607 10.607z"
           />
         </svg>
-        <div className=" cursor-pointer pt-24 md:pr-5   md:pt-0 flex   text-sm font-bold text-white md:text-xs md:pl-56">
+        <div className=" cursor-pointer pt-24  md:pr-5   md:pt-12 flex  	  text-sm font-bold text-white md:text-xs ">
           <p>Login</p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
           <p>Cabinet</p>&nbsp;&nbsp;&nbsp;&nbsp;
           <p>Cart</p>&nbsp;&nbsp;&nbsp;&nbsp;
@@ -97,7 +97,7 @@ const NavBar = () => {
           {nav ? <FaTimes size={20} /> : <FaBars size={20} />}
         </div>
         {nav && (
-          <ul className="flex flex-col justify-center  items-center  absolute top-0 left-0 w-full pt-52 h-screen bg-amber-50 text-gray-700">
+          <ul className="flex flex-col justify-center  items-center  absolute top-0 left-0 w-full pt-20 h-auto bg-yellow-200 text-stone-900">
             {links.map(({ id, link }) => (
               <li
                 key={id}
