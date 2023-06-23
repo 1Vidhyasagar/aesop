@@ -1,5 +1,5 @@
 import React from "react";
-import Logo from "../download/logo.png";
+import Logo from "../download/logo.jpg";
 import Pic from "../download/pic.jpg";
 
 
@@ -7,10 +7,11 @@ const Home = () => {
   return (
     <div
       name="home"
-      className="md:place-content-center md:h-screen  w-full  bg-white text-black text-left font-sans "
+      className="md:place-content-center md:h-screen  w-full  bg-yellow-200
+ text-black text-left font-sans "
     >
       <div
-        className="absolute pt-2 md:invisible  w-28   cursor-pointer md:mb-56 ml-6  md:w-64
+        className="	 absolute pt-2 md:invisible  w-28   cursor-pointer md:mb-56 ml-6  
         "
       >
         <img src={Logo} alt="" />
@@ -23,14 +24,14 @@ const Home = () => {
           <img src={Logo} alt="" />
         </div>
         <div className="px-6 pt-6 md:pt-12  md:flex md:flex-col justify-center pr-16 ">
-          <p className="  text-black md:py-4 max-w-md">Supporting city skin</p>
+          <p className="  text-black md:py-4 max-w-md">Welcome to Burger</p>
           <p className="text-3xl   text-gray-800 ">
-            Parsley Seed Anti-Oxidant Intense Serum
+            Burger bonanza! Explore the endless varieties now.
           </p>
           <p className="  font-medium text-black py-4 max-w-md ">
-            Explore how this anti-oxidant-rich serum hydrates, replenishes and
-            fortifies the skin via a suite of ingredients selected with urban
-            dwellers in mind.
+            Burger perfection awaits! Savor our gourmet patties with premium
+            ingredients and tantalizing toppings. Experience the ultimate flavor
+            adventure and satisfy your cravings today!
           </p>
 
           <div className="pt-6">
@@ -40,7 +41,7 @@ const Home = () => {
               rel="noreferrer"
             >
               <button className="bg-white hover:bg-neutral-900 text-black h-14 hover:text-white  w-11/12 px-3 py-1 flex items-center border-2  border-gray-300  cursor-pointer ">
-                <span className="text-sm">Discover the formulation </span>
+                <span className="text-sm">Discover the Offer </span>
                 &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
                 &nbsp;&nbsp;&nbsp;&nbsp;
                 <svg
@@ -61,7 +62,7 @@ const Home = () => {
             </a>
           </div>
         </div>
-        <div className="  md:w-10/12 md:h-80 md:mb-32 ">
+        <div className=" bg-yellow-500 shadow-2lg shadow-yellow-500/50	 md:w-auto  md:h-80 ">
           <img src={Pic} class=" " alt="" />
         </div>
       </div>

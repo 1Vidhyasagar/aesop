@@ -8,43 +8,43 @@ const NavBar = () => {
     const links = [
       {
         id: 1,
-        link: "Skin Care",
+        link: "Classic Burgers",
       },
       {
         id: 2,
-        link: "Body & Hand",
+        link: "Gourmet Burgers",
       },
       {
         id: 3,
-        link: "Hair",
+        link: "Vegetarian Burger",
       },
       {
         id: 4,
-        link: "Fragrance",
+        link: "Specialty Burgers",
       },
       {
         id: 5,
-        link: "Home",
+        link: "Burger Combos",
       },
       {
         id: 6,
-        link: "Kits & Travel",
+        link: "Sides & Extras",
       },
       {
         id: 7,
-        link: "Gifts",
+        link: "Signature Sauces",
       },
       {
-        id: 7,
-        link: "Read",
+        id: 8,
+        link: "Refreshing Beverages",
       },
       {
-        id: 7,
-        link: "Stores",
+        id: 9,
+        link: "Desserts",
       },
       {
-        id: 7,
-        link: "Facial Appointments",
+        id: 10,
+        link: "Catering Services",
       },
     ];
     
@@ -52,16 +52,18 @@ const NavBar = () => {
   return (
     <div>
       <div className="w-full md:h-11 font-bold hover:underline  cursor-pointer bg-neutral-900 text-white flex items-center justify-center text-sm  p-4 ">
-        Click and Collect is now available at select stores. Enjoy complimentary
-        carbon neutral shipping on all orders. &nbsp; +
+        Introducing Click and Collect! Explore our burger menu, order with ease,
+        and enjoy complimentary carbon-neutral shipping. &nbsp; +
       </div>
       <div
-        className="relative place-content-end font-bold flex justify-left items-center w-full  md:h-20 h-0  text-xs md:bg-zinc-800 
+        className="relative place-content-end font-bold flex justify-left items-center w-full  md:h-20 h-0  text-xs md:bg-yellow-950
+
+ 
  "
       >
         <ul className="invisible  md:visible md:flex">
           {links.map(({ id, link }) => (
-            <li key={id} className="pl-6 cursor-pointer capitalize text-white">
+            <li key={id} className="pl-7 cursor-pointer capitalize text-white">
               <Link to={link} smooth duration={500}>
                 {link}
               </Link>
@@ -83,8 +85,8 @@ const NavBar = () => {
             d="M21 21l-5.197-5.197m0 0A7.5 7.5 0 105.196 5.196a7.5 7.5 0 0010.607 10.607z"
           />
         </svg>
-        <div className="pt-24    md:pt-0 flex   text-sm font-bold text-white md:text-xs md:pl-56">
-          <p>Log in</p>&nbsp;&nbsp;&nbsp;&nbsp;
+        <div className=" cursor-pointer pt-24 md:pr-5   md:pt-0 flex   text-sm font-bold text-white md:text-xs md:pl-56" >
+          <p>Log in</p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
           <p>Cabinet</p>&nbsp;&nbsp;&nbsp;&nbsp;
           <p>Cart</p>&nbsp;&nbsp;&nbsp;&nbsp;
         </div>
@@ -95,7 +97,7 @@ const NavBar = () => {
           {nav ? <FaTimes size={20} /> : <FaBars size={20} />}
         </div>
         {nav && (
-          <ul className="flex flex-col justify-start  items-start  absolute top-0 left-0 w-full h-screen bg-amber-50 text-gray-700">
+          <ul className="flex flex-col justify-center  items-center  absolute top-0 left-0 w-full pt-52 h-screen bg-amber-50 text-gray-700">
             {links.map(({ id, link }) => (
               <li
                 key={id}
