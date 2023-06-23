@@ -7,11 +7,11 @@ const Home = () => {
   return (
     <div
       name="home"
-      className="md: md:place-content-center md:h-screen  w-full  bg-yellow-200 h-screen pt-1
+      className="md: md:place-content-center md:h-screen  w-full  bg-yellow-100 h-screen pt-5
  text-black text-left font-sans "
     >
       <div
-        className="	 absolute  md:invisible  w-28   cursor-pointer md:mb-56 ml-6  
+        className="	 absolute  md:invisible  w-20   cursor-pointer md:mb-56 md:ml-6 
         "
       >
         <img src={Logo} alt="" />
@@ -67,7 +67,7 @@ const Home = () => {
         <div className="  	 md:w-10/12  md:h-80 ">
           <img
             src={Pic}
-            class="rounded-full  shadow-2xl shadow-yellow-900"
+            class="rounded-tl-full  shadow-2xl shadow-yellow-900"
             alt=""
           />
         </div>
